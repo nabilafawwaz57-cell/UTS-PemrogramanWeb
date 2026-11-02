@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - BookStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1>Checkout</h1>
+
+            <p>Lengkapi pesanan dan informasi pembayaran Anda.</p>
+
+            <button onclick="location.href='dashboard.html'">
+                Kembali ke Dashboard
+            </button>
+
+            <h2>Data Pemesanan</h2>
+
+            <form id="formCheckout">
+
+                <label for="namaBuku">Nama Buku</label>
+                <input type="text" id="namaBuku"
+                    placeholder="Masukkan nama buku" required>
+
+                <label for="jumlahBuku">Jumlah Buku</label>
+                <input type="number" id="jumlahBuku"
+                    min="1" placeholder="Masukkan jumlah" required>
+
+                <button type="button" id="tambahPesanan">
+                    Tambah Pesanan
+                </button>
+
+                <h2>Daftar Pesanan</h2>
+
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Buku</th>
+                            <th>Jumlah</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="daftarPesanan">
+                    </tbody>
+                </table>
+
+                <h2>Informasi Pelanggan</h2>
+
+                <label for="namaPelanggan">Nama Pelanggan</label>
+                <input type="text" id="namaPelanggan"
+                    placeholder="Masukkan nama" required>
+
+                <label for="alamat">Alamat Pengiriman</label>
+                <input type="text" id="alamat"
+                    placeholder="Masukkan alamat" required>
+
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon"
+                    placeholder="Masukkan nomor telepon" required>
+
+                <h2>Informasi Pembayaran</h2>
+
+                <label for="metodePembayaran">Metode Pembayaran</label>
+
+                <select id="metodePembayaran" required>
+                    <option value="">Pilih pembayaran</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                    <option value="COD">COD</option>
+                </select>
+
+                <button type="submit">
+                    Simpan Pesanan
+                </button>
+
+            </form>
+
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>

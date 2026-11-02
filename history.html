@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Transaksi - BookStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>History Transaksi</h1>
+            <p>Riwayat transaksi pelanggan BookStore.</p>
+
+            <button onclick="location.href='dashboard.html'">
+                Kembali ke Dashboard
+            </button>
+
+            <h2>Riwayat Pembelian</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nomor DO</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Total Pembayaran</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelHistory"></tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <script src="js/history.js"></script>
+</body>
+</html>

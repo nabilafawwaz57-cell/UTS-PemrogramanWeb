@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Buku - BookStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1>Stok / Katalog Buku</h1>
+
+            <p>Daftar stok buku BookStore</p>
+
+            <button onclick="location.href='dashboard.html'">
+                Kembali ke Dashboard
+            </button>
+
+            <h2>Data Buku</h2>
+            
+            <h2>Tambah Buku Baru</h2>
+
+            <form id="formBuku">
+
+                <label for="judulBuku">Judul Buku</label>
+                <input type="text" id="judulBuku" placeholder="Masukkan judul buku" required>
+
+                <label for="penulisBuku">Penulis</label>
+                <input type="text" id="penulisBuku" placeholder="Masukkan nama penulis" required>
+
+                <label for="hargaBuku">Harga</label>
+                <input type="number" id="hargaBuku" placeholder="Masukkan harga" min="1" required>
+
+                <label for="stokBuku">Stok</label>
+                <input type="number" id="stokBuku" placeholder="Masukkan jumlah stok" min="0" required>
+
+                <button type="submit">Tambah Buku</button>
+
+            </form>
+
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Penulis</th>
+                        <th>Harga</th>
+                        <th>Stok</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelBuku">
+                    <!-- Data buku akan ditampilkan melalui JavaScript -->
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/stok.js"></script>
+
+</body>
+</html>

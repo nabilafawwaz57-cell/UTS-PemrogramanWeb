@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pemesanan - BookStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>Laporan Pemesanan</h1>
+            <p>Daftar laporan pesanan pelanggan BookStore.</p>
+
+            <button onclick="location.href='dashboard.html'">
+                Kembali ke Dashboard
+            </button>
+
+            <h2>Data Pesanan</h2>
+
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nomor DO</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Total Pembayaran</th>
+                        <th>Metode Pembayaran</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelLaporan"></tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <script src="js/laporan.js"></script>
+</body>
+</html>

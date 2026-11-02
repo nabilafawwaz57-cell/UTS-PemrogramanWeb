@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tracking - BookStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+
+            <h1>Tracking Pengiriman</h1>
+
+            <p>Periksa status pengiriman pesanan Anda.</p>
+
+            <button onclick="location.href='dashboard.html'">
+                Kembali ke Dashboard
+            </button>
+
+            <h2>Cari Pesanan</h2>
+
+            <form id="formTracking">
+
+                <label for="nomorDO">Nomor Delivery Order</label>
+
+                <input
+                    type="text"
+                    id="nomorDO"
+                    placeholder="Masukkan nomor DO"
+                    required
+                >
+
+                <button type="submit">Cari</button>
+
+            </form>
+
+            <div id="hasilTracking" style="display: none;">
+
+                <h2>Informasi Pengiriman</h2>
+
+                <p>Nama Pelanggan: <span id="namaPelanggan"></span></p>
+
+                <p>Status Pengiriman: <span id="statusPengiriman"></span></p>
+
+                <p>Ekspedisi: <span id="ekspedisi"></span></p>
+
+                <p>Tanggal Pengiriman: <span id="tanggalPengiriman"></span></p>
+
+                <p>Jenis Paket: <span id="jenisPaket"></span></p>
+
+                <p>Total Pembayaran: <span id="totalPembayaran"></span></p>
+
+                <h2>Progress Pengiriman</h2>
+
+                <div id="progressPengiriman"></div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/tracking.js"></script>
+
+</body>
+</html>
